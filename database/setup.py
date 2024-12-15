@@ -11,11 +11,11 @@ def create_tables():
         )
     ''')
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS magazines (
+            CREATE TABLE IF NOT EXISTS magazines (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
             category TEXT NOT NULL
-        )
+            )
     ''')
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS articles (
